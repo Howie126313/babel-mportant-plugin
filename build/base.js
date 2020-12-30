@@ -2,11 +2,9 @@
  * @Author: Howie 
  * @Date: 2019-07-17 09:36:40 
  * @Last Modified by: Bryan
- * @Last Modified time: 2020-12-30 13:47:46
+ * @Last Modified time: 2020-12-30 15:03:26
  */
 
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
 
 let baseConf = {
   input: 'src/index.js',
@@ -16,8 +14,6 @@ let baseConf = {
     name: 'named'
   },
   plugins: [
-    resolve(),
-    commonjs()
   ]
 };
 

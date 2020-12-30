@@ -1,6 +1,6 @@
 {
   "name": "landz-important-babel-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel 按需引入插件",
   "main": "dist/index.js",
   "scripts": {
@@ -13,9 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "@babel/preset-env": "^7.12.11",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-uglify-es": "0.0.1"
   }
 }
