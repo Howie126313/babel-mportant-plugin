@@ -2,25 +2,21 @@
  * @Author: Bryan
  * @Date: 2020-12-29 14:12:35
  * @Last Modified by: Bryan
- * @Last Modified time: 2021-01-16 17:43:38
+ * @Last Modified time: 2021-01-18 10:15:36
  */
 
 module.exports = function ({types: t}) {
   return {
     visitor: {
       ImportDeclaration(path, {opts}) {
-        const {libraryName} = opts
+        const {libraryName, alias} = opts
         if (!t.isStringLiteral(path.node.source, {value: libraryName})) {
           return
         }
         let raw = ''
         const arr = path.node.specifiers.map(item => {
-          raw = `landz-sensors-fullstack/dist/${item.local.name}.js`
-          // if (item.local.name.includes('Mini')) {
-          //   raw = 'landz-sensors-fullstack/dist/weChat'
-          // } else {
-          //   raw = 'landz-sensors-fullstack/dist/index'
-          // }
+          raw = `${alias}/${item.local.name}`
+          console.log(raw)
           return t.importDeclaration(
             [t.importSpecifier(item.local, {
               'type': 'Identifier',

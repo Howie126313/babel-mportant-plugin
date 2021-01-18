@@ -1,6 +1,6 @@
 {
   "name": "landz-import-babel-plugin",
-  "version": "1.1.1",
+  "version": "1.1.4",
   "description": "Babel 按需引入插件",
   "main": "dist/index.js",
   "scripts": {
