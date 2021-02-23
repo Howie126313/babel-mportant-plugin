@@ -1,11 +1,11 @@
-# landz-import-babel-plugin
+# babel-import-plugin
 _Babel按需引入插件_
 
 ## Install
 Using npm:
 
 `
-  npm install landz-import-babel-plugin --save-dev
+  npm install babel-import-plugin --save-dev
 `
 
 # Usage
